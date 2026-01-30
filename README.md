@@ -8,18 +8,15 @@
 ## Overview
 
 <p align='center'>
-<img src="./img/framework.png" width = "75%" />
+<img src="./img/framework.png" width = "80%" />
 </p>
 
-We release **TACLer-1.5B**, a hybrid reasoning model that supports both *Thinking* and *NoThinking* mode! 
+We release **TACLer-1.5B** ([🤗 HF Model](https://huggingface.co/laihuiyuan/TACLer)), a hybrid reasoning model that supports both *Thinking* and *NoThinking* mode! 
 We propose a model-tailored curriculum reinforcement learning framework that gradually increases the complexity of the data based on the model's proficiency in multi-stage RL training.
 
 Our experiments show that: 
 (i) TACLer reduces computational cost, **cutting training compute by over 50%** compared to long thinking models and **reducing inference token usage by over 42%** relative to the base model (*DeepSeek-R1-Distill-Qwen-1.5B (R1-Qwen)*); 
 and (ii) TACLer **improves accuracy by over 9%** on the base model, consistently outperforming  state-of-the-art *Nothinking* and *Thinking* baselines across four math datasets (MATH500, AMC, AIME 2024, and AIME 2025).
-
-[//]: # (Code: https://github.com/laihuiyuan/tacler)
-[//]: # (Paper: https://arxiv.org/abs/)
 
 
 ## Evaluation
@@ -65,6 +62,7 @@ sh run_eval.sh laihuiyuan/TACLer
 
 
 #### *NoThinking* mode
+For MATH500 and AIME 2024, results for all baselines except AutoThink are taken from [Zhang et al. (2025)](https://arxiv.org/abs/2505.13417). 
 <table>
   <tr style="text-align:center;">
     <td colspan="1">Models</td> 
