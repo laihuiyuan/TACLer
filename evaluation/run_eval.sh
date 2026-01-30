@@ -7,7 +7,7 @@ do
     sample_n=16
   fi
   CUDA_VISIBLE_DEVICES='0' \
-  python -m tacl.eval \
+  python -m eval \
   --model_path $1 \
   --data_path "data/${dataset}.json" \
   --output_dir "outputs" \
@@ -27,7 +27,7 @@ do
     sample_n=16
   fi
   CUDA_VISIBLE_DEVICES='0' \
-  python -m tacl.eval \
+  python -m eval \
   --model_path $1 \
   --think_mode \
   --data_path "data/${dataset}.json" \

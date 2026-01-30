@@ -58,7 +58,7 @@ def parse_args():
     parser.add_argument("--top_p", default=1, type=float)
     parser.add_argument('--stop', type=str, nargs='+', default=['\n</solution>'])
     parser.add_argument("--pass_k", default=1, type=int, help="pass@k")
-    parser.add_argument("--max_tokens", default=32768, type=int)
+    parser.add_argument("--max_tokens", default=16384, type=int)
     parser.add_argument("--seed", default=0, type=int)
     args = parser.parse_args()
 
