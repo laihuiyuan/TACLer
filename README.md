@@ -8,7 +8,7 @@
 ## Overview
 
 <p align='center'>
-<img src="./img/framework.png" width = "70%" />
+<img src="./img/framework.png" width = "75%" />
 </p>
 
 We release **TACLer-1.5B**, a hybrid reasoning model that supports both *Thinking* and *NoThinking* mode! 
@@ -24,7 +24,7 @@ and (ii) TACLer **improves accuracy by over 9%** on the base model, consistently
 
 ## Evaluation
 
-We sample 16 responses for each question in AIME 2024 and AIME 2025 (1 for other datasets), and report the average results (Accuracy and token usage) due to their limited dataset size.
+We sample 16 responses for each question in AMC, AIME 2024 and AIME 2025 (1 for MATH500), and report the average results (Accuracy and token usage) due to their limited dataset size.
 
 ```bash
 cd evaluation
@@ -34,7 +34,12 @@ sh run_eval.sh laihuiyuan/TACLer
 #### *Thinking* mode
 <table>
   <tr style="text-align:center;">
-    <td colspan="1">Models</td> <td colspan="2">MATH500</td> <td colspan="2">AIME2024</td> <td colspan="2">AMC</td> <td colspan="2">AIME 2025</td> <td colspan="2">Average</td>
+    <td colspan="1">Models</td> 
+    <td colspan="2" style="text-align:center;">MATH500</td>
+    <td colspan="2" style="text-align:center;">AIME2024</td>
+    <td colspan="2" style="text-align:center;">AMC</td> 
+    <td colspan="2" style="text-align:center;">AIME 2025</td> 
+    <td colspan="2" style="text-align:center;">Average</td>
   </tr>
   <tr style="text-align:center;">
     <td>Metrics</td> 
@@ -62,7 +67,10 @@ sh run_eval.sh laihuiyuan/TACLer
 #### *NoThinking* mode
 <table>
   <tr style="text-align:center;">
-    <td colspan="1">Models</td> <td colspan="2">MATH500</td> <td colspan="2">AIME2024</td> <td colspan="2">Average</td>
+    <td colspan="1">Models</td> 
+    <td colspan="2" style="text-align:center;">MATH500</td>
+    <td colspan="2" style="text-align:center;">AIME2024</td>
+    <td colspan="2" style="text-align:center;">Average</td>
   </tr>
   <tr style="text-align:center;">
     <td>Metrics</td> <td>ACC</td> <td>Length</td> <td>ACC</td> <td>Length</td> <td>ΔACC</td> <td>ΔLength</td>
@@ -99,7 +107,10 @@ sh run_eval.sh laihuiyuan/TACLer
   </tr>
   
   <tr style="text-align:center;">
-    <td colspan="1">Models</td> <td colspan="2">MATH500</td> <td colspan="2">AIME2024</td> <td colspan="2">Average</td>
+    <td colspan="1">Models</td> 
+    <td colspan="2" style="text-align:center;">AMC</td> 
+    <td colspan="2" style="text-align:center;">AIME 2025</td> 
+    <td colspan="2" style="text-align:center;">Average</td>
   </tr>
   <tr style="text-align:center;">
     <td>R1-Qwen_Thinking</td> <td>60.8</td> <td>8754</td> <td>21.5</td> <td>12182</td> <td>-</td> <td>-</td>
